@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landwind - Tailwind CSS Landing Page Demo</title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div class="flex justify-center items-center h-screen" style="background-color:hsla(0,100%,50%,0);
+        background-image:
+        radial-gradient(at 84% 62%, hsla(301,94%,73%,0.24) 0px, transparent 50%),
+        radial-gradient(at 64% 60%, hsla(224,94%,73%,0.31) 0px, transparent 50%),
+        radial-gradient(at 44% 45%, hsla(147,65%,51%,0.32) 0px, transparent 50%),
+        radial-gradient(at 18% 43%, hsla(77,100%,76%,0.33) 0px, transparent 50%);">
+            <div class="text-center">
+                <h5 class="font-bold text-3xl">Sign in to Haritspedia</h5>
+                <h6 class="font-semibold text-sm mb-7">Get access to your account</h6>
+                <div class="bg-white px-6 py-7 text-center shadow-md text-start rounded-xl">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="username-email" class="text-sm font-semibold">Username or email address</label>
+                            <input type="text" name="" id="" placeholder="Username or email"
+                                class="py-2 px-3 border border-black rounded-lg w-full mt-2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="username-email" class="text-sm font-semibold">Password</label>
+                            <div class="relative">
+                                <input type="password" name="" id="" placeholder="Password"
+                                    class="py-2 px-3 border border-black rounded-lg w-full mt-2">
+                                <span class="absolute right-4 bottom-0 top-5 cursor-pointer">
+                                    <ion-icon name="eye-outline" class="text-xl"></ion-icon>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-end mb-2">
+                            <a href="" class="text-sm font-semibold">Forgot password?</a>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit"
+                                class="px-3 py-2.5 bg-black w-full text-white text-sm font-semibold rounded-lg">Sign
+                                In</button>
+                    </form>
+                    <hr class="border-t border-black my-3 rounded-full">
+                    <button
+                        class="px-3 py-2.5 focus:outline-none bg-transparent hover:bg-gray-100 rounded-lg border border-gray-500 w-full text-black text-sm font-semibold rounded-lg mt-2">
+                        <div class="flex justify-center items-center">
+                            <img src="https://www.svgrepo.com/show/380993/google-logo-search-new.svg" alt="" srcset="" class="w-5 mr-2">
+                            <span>Sign In with Google</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="text-start mt-3">
+                    <span class="text-sm font-semibold"><a href="">Create an Account</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<html>
