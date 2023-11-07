@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landwind - Tailwind CSS Landing Page Demo</title>
-    <!-- <link href="./output.css" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body style="font-family: 'Poppins', sans-serif;">
     <header class="fixed w-full z-20">
         <nav class="bg-white border-gray-200 py-2.5">
-            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-3 mx-auto">
                 <a href="#" class="flex items-center">
-                    <img src="https://www.svgrepo.com/show/337438/market-analysis.svg" class="h-6 mr-3 sm:h-9"
+                    <img src="https://www.svgrepo.com/show/337438/market-analysis.svg" class="h-6 mr-2 sm:h-9"
                         alt="Landwind Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Haritspedia</span>
                 </a>
@@ -96,7 +99,8 @@
                             <div class="flex items-center">
                                 <button id="dropdown-button" data-dropdown-toggle="dropdown"
                                     class="flex-shrink-0 inline-flex items-center py-3.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"
-                                    type="button"><span class="hidden lg:inline">Categories</span> <svg class="w-2.5 h-2.5 ml-0 lg:ml-2.5" aria-hidden="true"
+                                    type="button"><span class="hidden lg:inline">Categories</span> <svg
+                                        class="w-2.5 h-2.5 ml-0 lg:ml-2.5" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="m1 1 4 4 4-4" />
@@ -130,8 +134,8 @@
                                 </div>
                                 <button type="submit"
                                     class="inline-flex items-center py-3.5 px-4 lg:px-7 ml-2 text-sm font-medium text-white bg-black rounded-lg border border-black hover:bg-slate-800 focus:outline-none">
-                                    <svg class="w-4 h-4 mr-0 lg:mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 mr-0 lg:mr-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                     </svg><span class="hidden lg:inline">Search</span>
@@ -180,7 +184,8 @@
         <div class="container mx-auto px-3 pl-0 -mt-0 lg:pl-7 lg:-mt-20">
             <div class="mb-6 lg:mb-14 text-center">
                 <h4 class="text-3xl lg:text-4xl font-extrabold">Popular Application</h4>
-                <span class="font-medium text-sm lg:text-base">Aplikasi paling populer dan paling banyak dikunjungi pengguna saat ini</span>
+                <span class="font-medium text-sm lg:text-base">Aplikasi paling populer dan paling banyak dicari pengguna
+                    saat ini</span>
             </div>
             <div class="flex justify-start overflow-x-auto">
                 <div class="flex gap-x-5 pb-7 px-3">
@@ -406,381 +411,22 @@
     </section>
     <!-- popular-product end -->
 
-    <!-- more-product start -->
-    <!-- <section class="py-10" id="more-product">
-        <div class="container mx-auto px-7">
-            <div class="mb-14 text-center">
-                <h4 class="text-4xl font-extrabold">More Application</h4>
-                <span class="font-medium">Aplikasi lainnya yang tidak kalah keren dengan aplikasi populer diatas</span>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                <div class="w-96 bg-white border border-gray-200 rounded-lg shadow-md">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="app.png" alt="" />
-                    </a>
-                    <div class="p-4">
-                        <a href="#">
-                            <div>
-                                <span
-                                    class="bg-orange-600 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">HTML</span>
-                                <span
-                                    class="bg-cyan-500 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">Tailwind</span>
-                                <span
-                                    class="bg-yellow-400 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">JavaScript</span>
-                            </div>
-                            <h5 class="text-lg font-bold tracking-tight">Gofolio: The Simple Web Portfolio
-                                TailwindCSS
-                            </h5>
-                            <h6 class="font-bold text-sm">Rp. 500.000</h6>
-                            <div class="flex justify-end">
-                                <div>
-                                    <h6 class="text-xs font-semibold flex items-center justify-end"><ion-icon
-                                            name="cart-outline" class="text-base mr-1"></ion-icon> 407
-                                        Dibeli</h6>
-
-                                    <div class="flex items-center space-x-1">
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700"></p>
-                    </div>
-                </div>
-                <div class="w-96 bg-white border border-gray-200 rounded-lg shadow-md">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="app.png" alt="" />
-                    </a>
-                    <div class="p-4">
-                        <a href="#">
-                            <div>
-                                <span
-                                    class="bg-orange-600 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">HTML</span>
-                                <span
-                                    class="bg-cyan-500 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">Tailwind</span>
-                                <span
-                                    class="bg-yellow-400 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">JavaScript</span>
-                            </div>
-                            <h5 class="text-lg font-bold tracking-tight">Gofolio: The Simple Web Portfolio
-                                TailwindCSS
-                            </h5>
-                            <h6 class="font-bold text-sm">Rp. 500.000</h6>
-                            <div class="flex justify-end">
-                                <div>
-                                    <h6 class="text-xs font-semibold flex items-center justify-end"><ion-icon
-                                            name="cart-outline" class="text-base mr-1"></ion-icon> 407
-                                        Dibeli</h6>
-
-                                    <div class="flex items-center space-x-1">
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700"></p>
-                    </div>
-                </div>
-                <div class="w-96 bg-white border border-gray-200 rounded-lg shadow-md">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="app.png" alt="" />
-                    </a>
-                    <div class="p-4">
-                        <a href="#">
-                            <div>
-                                <span
-                                    class="bg-orange-600 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">HTML</span>
-                                <span
-                                    class="bg-cyan-500 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">Tailwind</span>
-                                <span
-                                    class="bg-yellow-400 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">JavaScript</span>
-                            </div>
-                            <h5 class="text-lg font-bold tracking-tight">Gofolio: The Simple Web Portfolio
-                                TailwindCSS
-                            </h5>
-                            <h6 class="font-bold text-sm">Rp. 500.000</h6>
-                            <div class="flex justify-end">
-                                <div>
-                                    <h6 class="text-xs font-semibold flex items-center justify-end"><ion-icon
-                                            name="cart-outline" class="text-base mr-1"></ion-icon> 407
-                                        Dibeli</h6>
-
-                                    <div class="flex items-center space-x-1">
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700"></p>
-                    </div>
-                </div>
-                <div class="w-96 bg-white border border-gray-200 rounded-lg shadow-md">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="app.png" alt="" />
-                    </a>
-                    <div class="p-4">
-                        <a href="#">
-                            <div>
-                                <span
-                                    class="bg-orange-600 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">HTML</span>
-                                <span
-                                    class="bg-cyan-500 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">Tailwind</span>
-                                <span
-                                    class="bg-yellow-400 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">JavaScript</span>
-                            </div>
-                            <h5 class="text-lg font-bold tracking-tight">Gofolio: The Simple Web Portfolio
-                                TailwindCSS
-                            </h5>
-                            <h6 class="font-bold text-sm">Rp. 500.000</h6>
-                            <div class="flex justify-end">
-                                <div>
-                                    <h6 class="text-xs font-semibold flex items-center justify-end"><ion-icon
-                                            name="cart-outline" class="text-base mr-1"></ion-icon> 407
-                                        Dibeli</h6>
-
-                                    <div class="flex items-center space-x-1">
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700"></p>
-                    </div>
-                </div>
-                <div class="w-96 bg-white border border-gray-200 rounded-lg shadow-md">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="app.png" alt="" />
-                    </a>
-                    <div class="p-4">
-                        <a href="#">
-                            <div>
-                                <span
-                                    class="bg-orange-600 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">HTML</span>
-                                <span
-                                    class="bg-cyan-500 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">Tailwind</span>
-                                <span
-                                    class="bg-yellow-400 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">JavaScript</span>
-                            </div>
-                            <h5 class="text-lg font-bold tracking-tight">Gofolio: The Simple Web Portfolio
-                                TailwindCSS
-                            </h5>
-                            <h6 class="font-bold text-sm">Rp. 500.000</h6>
-                            <div class="flex justify-end">
-                                <div>
-                                    <h6 class="text-xs font-semibold flex items-center justify-end"><ion-icon
-                                            name="cart-outline" class="text-base mr-1"></ion-icon> 407
-                                        Dibeli</h6>
-
-                                    <div class="flex items-center space-x-1">
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700"></p>
-                    </div>
-                </div>
-                <div class="w-96 bg-white border border-gray-200 rounded-lg shadow-md">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="app.png" alt="" />
-                    </a>
-                    <div class="p-4">
-                        <a href="#">
-                            <div>
-                                <span
-                                    class="bg-orange-600 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">HTML</span>
-                                <span
-                                    class="bg-cyan-500 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">Tailwind</span>
-                                <span
-                                    class="bg-yellow-400 text-white text-xs font-medium mr-0.5 px-2.5 py-0.5 rounded">JavaScript</span>
-                            </div>
-                            <h5 class="text-lg font-bold tracking-tight">Gofolio: The Simple Web Portfolio
-                                TailwindCSS
-                            </h5>
-                            <h6 class="font-bold text-sm">Rp. 500.000</h6>
-                            <div class="flex justify-end">
-                                <div>
-                                    <h6 class="text-xs font-semibold flex items-center justify-end"><ion-icon
-                                            name="cart-outline" class="text-base mr-1"></ion-icon> 407
-                                        Dibeli</h6>
-
-                                    <div class="flex items-center space-x-1">
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- more-poduct-end -->
-
     <!-- subscription-section start -->
     <section class="py-5" id="subscription-section">
         <div class="lg:container lg:mx-auto px-1 lg:px-7">
             <div class="py-5 lg:py-3 px-7 border border-slate-300 rounded-xl">
                 <div class="block justify-none lg:flex lg:justify-center">
                     <div class="self-center w-auto mb-5 lg:mb-0 lg:w-1/2">
-                        <h5 class="text-lg lg:text-2xl font-bold mb-1 lg:mb-0">Ingin mendapat notif email dari kami?</h5>
+                        <h5 class="text-lg lg:text-2xl font-bold mb-1 lg:mb-0">Ingin mendapat notif email dari kami?
+                        </h5>
                         <span class="text-sm font-medium">Notif bisa berupa diskon, produk baru, dan update
                             berita</span>
                     </div>
                     <div class="self-center w-auto lg:w-1/2">
                         <form action="">
                             <div class="flex justify-center lg:justify-end gap-x-2">
-                                <input type="text" class="border-2 w-80 border-black rounded-lg py-2 px-3 focus:outline-none focus:ring-1 ring-black"
+                                <input type="text"
+                                    class="border-2 w-80 border-black rounded-lg py-2 px-3 focus:outline-none focus:ring-1 ring-black"
                                     placeholder="Enter your email" name="" id="">
                                 <button
                                     class="flex items-center bg-black text-white py-2 px-5 rounded-xl font-semibold text-sm">Send
